@@ -10,7 +10,7 @@ import UIKit
 
 class MySchedlingListViewController: UITableViewController {
 
-    let itemCell = ["Study Swift","go to university","Con't in clean app"]
+    var itemCell = ["Study Swift","go to university","Con't in clean app"]
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -39,7 +39,27 @@ class MySchedlingListViewController: UITableViewController {
        
     }
     
-
+    @IBAction func uiAddItem(_ sender: UIBarButtonItem) {
+        
+        var mainText = UITextField()
+        
+        let alert = UIAlertController(title: "Add New Item", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+           // print(mainText.text)
+            self.itemCell.append(mainText.text!)
+            self.tableView.reloadData()
+        }
+        alert.addTextField { (addNewText) in
+            addNewText.placeholder = "Create new Item"
+            mainText = addNewText
+        }
+        alert.addAction(action)
+        present(alert,animated: true, completion: nil)
+    }
+    
 
 }
+
+
 
