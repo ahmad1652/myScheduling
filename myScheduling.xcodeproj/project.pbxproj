@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0ABF7FB20A5BB2A0049A993 /* CategoreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABF7FA20A5BB2A0049A993 /* CategoreyViewController.swift */; };
 		E0B3C7DA2039542D00629709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B3C7D92039542D00629709 /* AppDelegate.swift */; };
 		E0B3C7DC2039542D00629709 /* MySchedlingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B3C7DB2039542D00629709 /* MySchedlingListViewController.swift */; };
 		E0B3C7DF2039542D00629709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B3C7DD2039542D00629709 /* Main.storyboard */; };
 		E0B3C7E12039542D00629709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B3C7E02039542D00629709 /* Assets.xcassets */; };
 		E0B3C7E42039542D00629709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B3C7E22039542D00629709 /* LaunchScreen.storyboard */; };
+		E0E9CFDB2055AD4E0039D3CD /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0E9CFD92055AD4E0039D3CD /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0ABF7FA20A5BB2A0049A993 /* CategoreyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoreyViewController.swift; sourceTree = "<group>"; };
 		E0B3C7D62039542D00629709 /* myScheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myScheduling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B3C7D92039542D00629709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B3C7DB2039542D00629709 /* MySchedlingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedlingListViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E0B3C7E02039542D00629709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0B3C7E32039542D00629709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0B3C7E52039542D00629709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E9CFDA2055AD4E0039D3CD /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E086A097205271860076BD2B /* Item Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0E9CFD92055AD4E0039D3CD /* DataModel.xcdatamodeld */,
+			);
+			path = "Item Model";
+			sourceTree = "<group>";
+		};
+		E086A098205271980076BD2B /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				E0B3C7E02039542D00629709 /* Assets.xcassets */,
+				E0B3C7E22039542D00629709 /* LaunchScreen.storyboard */,
+			);
+			path = "Support File";
+			sourceTree = "<group>";
+		};
+		E086A099205271A30076BD2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0B3C7DD2039542D00629709 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E086A09A205271AA0076BD2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0ABF7FA20A5BB2A0049A993 /* CategoreyViewController.swift */,
+				E0B3C7DB2039542D00629709 /* MySchedlingListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E0B3C7CD2039542D00629709 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				E0B3C7D92039542D00629709 /* AppDelegate.swift */,
-				E0B3C7DB2039542D00629709 /* MySchedlingListViewController.swift */,
-				E0B3C7DD2039542D00629709 /* Main.storyboard */,
-				E0B3C7E02039542D00629709 /* Assets.xcassets */,
-				E0B3C7E22039542D00629709 /* LaunchScreen.storyboard */,
+				E086A097205271860076BD2B /* Item Model */,
+				E086A09A205271AA0076BD2B /* Controller */,
+				E086A099205271A30076BD2B /* Views */,
+				E086A098205271980076BD2B /* Support File */,
 				E0B3C7E52039542D00629709 /* Info.plist */,
 			);
 			path = myScheduling;
@@ -91,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ahmad Mustafa";
 				TargetAttributes = {
 					E0B3C7D52039542D00629709 = {
@@ -137,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B3C7DC2039542D00629709 /* MySchedlingListViewController.swift in Sources */,
+				E0E9CFDB2055AD4E0039D3CD /* DataModel.xcdatamodeld in Sources */,
+				E0ABF7FB20A5BB2A0049A993 /* CategoreyViewController.swift in Sources */,
 				E0B3C7DA2039542D00629709 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +217,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +225,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +276,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +284,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -322,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0E9CFD92055AD4E0039D3CD /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0E9CFDA2055AD4E0039D3CD /* DataModel.xcdatamodel */,
+			);
+			currentVersion = E0E9CFDA2055AD4E0039D3CD /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E0B3C7CE2039542D00629709 /* Project object */;
 }
